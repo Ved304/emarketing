@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* HEADER / NAV */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0;
+  height: 56px;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+
+header a { text-decoration: none; color: #111; }
+header strong { font-size: 17px; }
+
+header nav { display: flex; align-items: center; gap: 20px; }
+header nav a { font-size: 14px; color: #444; text-decoration: none; }
+header nav a:hover { color: #111; }
+header nav a.button { color: #fff; }
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  background: #3b3bf5;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button:hover { background: #2a2adb; color: #fff; text-decoration: none; }
+
+.btn-outline {
+  background: #fff;
+  color: #3b3bf5;
+  border: 1px solid #3b3bf5;
+}
+.btn-outline:hover { background: #f0f0ff; color: #3b3bf5; }
+
+/* FORM BUTTON */
+button[type="submit"] {
+  display: inline-block;
+  background: #3b3bf5;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 360px;
+  margin-top: 8px;
+}
+button[type="submit"]:hover { background: #2a2adb; }
+
+section { padding: 40px 0; }
+
+/* CTA SECTION */
+.cta-section { text-align: center; }
+
+h1 { font-size: 2rem; margin-bottom: 12px; }
+h2 { font-size: 1.4rem; margin-bottom: 16px; }
+h3 { font-size: 1rem; margin-top: 20px; margin-bottom: 4px; }
+
+input[type="email"],
+input[type="text"],
+select {
+  font-family: sans-serif;
+  font-size: 15px;
+  padding: 6px 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 360px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] { width: auto; margin: 0 6px 0 0; }
+
+table { border-collapse: collapse; width: 100%; margin-bottom: 12px; }
+th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; font-size: 14px; }
+th { background: #f4f4f4; }
+tfoot td { padding-top: 12px; }
+
+details { margin-bottom: 8px; }
+details summary { cursor: pointer; font-weight: 500; padding: 6px 0; }
+details p { margin: 6px 0 10px 16px; color: #444; }
+
+footer { font-size: 13px; color: #777; padding: 16px 0 24px; text-align: center; }
+
+hr { border: none; border-top: 1px solid #ddd; margin: 0; }
