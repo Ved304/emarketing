@@ -1,18 +1,5 @@
 window.dataLayer = window.dataLayer || [];
 
-/* SCROLL_75 */
-(function () {
-  var fired = false;
-  window.addEventListener('scroll', function () {
-    if (fired) return;
-    var pct = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
-    if (pct >= 0.75) {
-      fired = true;
-      window.dataLayer.push({ event: 'scroll_75', page_path: window.location.pathname });
-    }
-  }, { passive: true });
-})();
-
 /* PRICING_VIEW */
 (function () {
   if (window.location.pathname.indexOf('pricing') !== -1) {
