@@ -22,14 +22,14 @@ window.dataLayer = window.dataLayer || [];
 
 /* CTA_CLICK */
 document.addEventListener('DOMContentLoaded', function () {
-  ['cta-main', 'cta-secondary', 'nav-pricing'].forEach(function (id) {
+  ['cta-main', 'cta-secondary'].forEach(function (id) {
     var el = document.getElementById(id);
     if (el) {
       el.addEventListener('click', function () {
         window.dataLayer.push({
           event: 'cta_click',
           cta_id: id,
-          cta_location: { 'cta-main': 'hero', 'cta-secondary': 'cta_section', 'nav-pricing': 'nav' }[id] || 'unknown',
+          cta_location: { 'cta-main': 'hero', 'cta-secondary': 'cta_section'}[id] || 'unknown',
           page_path: window.location.pathname
         });
       });
