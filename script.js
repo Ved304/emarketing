@@ -5,12 +5,9 @@
 //   Wariant B (testowy):   2 pola (email, rola) + przypomnienie wartości
 // ============================================================
 
-// --- 1. Losowanie i zapis wariantu (localStorage zapobiega "skakaniu") ---
-var abVariant = localStorage.getItem('ab_variant');
-if (!abVariant) {
-  abVariant = Math.random() < 0.5 ? 'A' : 'B';
-  localStorage.setItem('ab_variant', abVariant);
-}
+// --- 1. Losowanie wariantu przy każdym załadowaniu strony ---
+// (localStorage pominięty celowo — mała próba testowa, losowanie ręczne)
+var abVariant = Math.random() < 0.5 ? 'A' : 'B';
 
 // --- 2. Wyślij event ab_impression z parametrem variant ---
 window.dataLayer = window.dataLayer || [];
