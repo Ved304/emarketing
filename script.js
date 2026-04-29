@@ -57,17 +57,3 @@ if (form) {
     if (success) success.style.display = 'block';
   });
 }
-
-// ============================================================
-// Jak przetestować lokalnie (bez deploymentu):
-//   1. Otwórz index.html w przeglądarce (File > Open lub przeciągnij)
-//   2. Otwórz DevTools → Console i wpisz: localStorage.getItem('ab_variant')
-//      — zobaczysz 'A' lub 'B'
-//   3. Aby wymusić konkretny wariant: localStorage.setItem('ab_variant','B')
-//      i odśwież stronę
-//   4. Zdarzenia dataLayer widać w Console:
-//      wpisz: dataLayer  — pokażą się wszystkie eventy
-//
-// Do pełnego testu z GA4 wymagany jest deployment (np. GitHub Pages),
-// bo GTM nie działa na protokole file://
-// ============================================================
