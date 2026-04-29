@@ -20,7 +20,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-V5626B443S');
 </script>
 
@@ -39,7 +38,6 @@
   </header>
 
   <main>
-
     <section id="hero">
       <h1>Koniec z ręcznym pisaniem podsumowań spotkań.</h1>
       <p>MeetSnap automatycznie generuje podsumowanie i listę zadań zaraz po każdym spotkaniu.</p>
@@ -85,6 +83,12 @@
     <section id="signup">
       <h2>Zapisz się na wczesny dostęp</h2>
       <p>Bezpłatny plan · Do 5 spotkań miesięcznie · Bez karty kredytowej</p>
+
+      <!-- Wariant B: przypomnienie wartości — domyślnie ukryte, pokazywane przez script.js -->
+      <p id="ab-reminder" style="display:none; font-weight:bold; margin-bottom:1rem;">
+        Zaoszczędź 40 minut po każdym spotkaniu — za darmo.
+      </p>
+
       <form id="signup-form">
         <p>
           <label for="email">E-mail *</label><br>
@@ -100,16 +104,20 @@
             <option value="Executive">Szef</option>
           </select>
         </p>
-        <p>
+
+        <!-- Wariant A: widoczne; Wariant B: ukrywane przez script.js -->
+        <p id="goal-field">
           <label for="goal">Cel (opcjonalnie)</label><br>
           <input type="text" id="goal" name="goal" placeholder="np. automatyzacja podsumowań..." />
         </p>
+
         <p>
           <input type="checkbox" id="consent" name="consent" required />
           <label for="consent">Wyrażam zgodę na przetwarzanie danych osobowych.</label>
         </p>
         <button type="submit">Dołącz do listy oczekujących</button>
       </form>
+
       <div id="form-success" style="display:none">
         <p>✓ Zapisano! Damy Ci znać, gdy będziemy gotowi.</p>
       </div>
@@ -136,7 +144,6 @@
         <p>Działa.</p>
       </details>
     </section>
-
   </main>
 
   <footer>
